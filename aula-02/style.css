@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospacea;
+    outline: none;
+}
+.To-do{
+    display: flex;
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+}
+.To-do-container{
+    background-color: gray;
+    width: 500px;
+    margin: auto;
+    align-items: center;
+}
+.To-do-container h1 {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+.To-do-container input{
+    margin: 10px;
+    width: 300px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.addi-task{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+   transform: translateX(50px);
+}
+.addi-task:hover{
+    background-color: rgba(42, 39, 39, 0.176);
+    color: white;
+}
+.addi-task:hover:active{
+    opacity: 0.3;
+}
+.ul-task {
+    list-style: none;
+}
+.ul-task li{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+img {
+    width: 6%;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.9s all ease-in-out;
+}
+.list-task:hover img {
+    opacity: 1;
+}
+.list-task .X {
+    transform: translateX(85px);
+}
+/*vindo do javascript*/
+.concluir:active li {
+    background: #8fac55;
+    text-decoration: line-through;
+}
