@@ -69,7 +69,14 @@ img {
     transform: translateX(85px);
 }
 /*vindo do javascript*/
-.concluir:active li {
-    background: #8fac55;
+.concluirt {
+
+    background-color: #8fac55;
     text-decoration: line-through;
+    font-weight: bolder;
+}
+.mal {
+
+    background-color: red;
+    font-weight: bolder;
 }

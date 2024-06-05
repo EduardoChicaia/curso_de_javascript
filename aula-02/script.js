@@ -4,7 +4,11 @@ const listaLi = []
 
 function adicionar () {
 
-    listaLi.push( input.value)
+    listaLi.push({
+        tarefa: input.value,
+        concluida: false,
+        mal: false
+    })
     input.value = ''
     mostrar()
     
@@ -14,10 +18,10 @@ function mostrar(){
     listaLi.forEach((item, posicao ) =>{
         
         novaLi = novaLi + `
-            <li class="list-task">
+            <li class="list-task ${item.concluida &&"concluirt"|| item.mal &&"mal"}">
                 <img src="img/nok.png" alt="ok" onclick="concluir(${posicao})" class="feito">
-                <p>${item}</p>
-                <img src="img/Cheknok.jfif" alt="nok" class="X">
+                <p>${item.tarefa}</p>
+                <img src="img/Cheknok.jfif" alt="nok" class="X" onclick="nok(${posicao})">
                 <img src="img/deletar.png" alt="deletar" onclick="apagar(${(posicao)})">
             </li>`
           
@@ -25,13 +29,20 @@ function mostrar(){
     completa.innerHTML = novaLi
 }
 function apagar(posicao){
+
     listaLi.splice(posicao,1)
 
     mostrar()
 }
 function concluir(posicao){
     
-    let feito = document.querySelector('.feito')
-    feito.classList.toggle('concluir', posicao)
+    listaLi[posicao].concluida =  !listaLi[posicao].concluida
 
+    mostrar()
+}
+function nok(posicao){
+    
+    listaLi[posicao].mal =  !listaLi[posicao].mal
+
+    mostrar()
 }
