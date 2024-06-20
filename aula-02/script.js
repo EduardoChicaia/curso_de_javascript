@@ -9,6 +9,11 @@ function adicionar () {
         concluida: false,
         mal: false
     })
+
+    /*if (input.value == "") {
+        alert("Campo de tarefa vazio, preenche por favor!");
+        return false;
+      }*/
     input.value = ''
     mostrar()
     
