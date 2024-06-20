@@ -34,7 +34,7 @@ function yellow(){
         lamp.style.backgroundColor = "rgb(88, 88, 37)";
         clearInterval(amarelo)
         red()
-    }, 4000)
+    }, 6000)
 }
 function green(){
     contagem(10)
