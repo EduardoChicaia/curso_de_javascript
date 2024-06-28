@@ -30,3 +30,19 @@ body{
 #green{
     background-color: rgba(9, 120, 9, 0.472);
 }
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.365);
+    width: 380px;
+    height: 450px;
+    padding: 25px;
+    border-radius: 30px;
+}
+.numero{
+    margin: 0;
+    font-size: 300px;
+    font-family: "Black Ops One", system-ui;
+    color: yellow;
+}
