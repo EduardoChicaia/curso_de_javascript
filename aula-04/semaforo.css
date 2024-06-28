@@ -20,7 +20,7 @@ body{
     height: 150px;
     background-color: silver;
     margin-top: 5px;
-    border-radius: 60px;
+    border-radius: 50%;
 }
 #green{
     background-color: rgb(46, 97, 46);
