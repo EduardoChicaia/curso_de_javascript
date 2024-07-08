@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.conteiner{
+    height: 100vh;
+    background-image: url( https://source.unsplash.com/1600x900/...);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tela-maior{
+    background-color: black;
+    color: white;
+    width: 90vw;
+    border-radius: 10px;
+    max-width: 450px;
+    opacity: 0.6;
+    padding: 16px;
+}
+.pesquisa{
+    margin: 15px 0 25px 0;
+}
+.pesquisa input{
+    background-color: rgba(50, 49, 49, 0.081);
+    color: white;
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+button{
+    background-color: rgba(50, 49, 49, 0.081);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 50px;
+    padding:5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cidade{
+    margin: 0px 0px 15px 0px;
+}
+.cidade h2{
+    margin-bottom: 20px;
+}
+.tempo{
+    margin: 0px 0px 15px 0px;
+    display: flex;
+}
+.tempo p{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
