@@ -23,8 +23,25 @@ class Pessoa
     }
 
 
+    // Get metodo para pegar uma informação do  atributo
+
+    get nome () {
+        return this._nome
+    }
+
+    // Set metodo para configurar, editar ou alterar uma informação do atributo
+
+    set nome (novoNome) {
+        return this._nome = novoNome
+    }
 }
 
 let pessoa1 = new Pessoa('Edward', 34, 1.97, 72)
 
 console.log(pessoa1)
+
+console.log(pessoa1.nome)
+
+pessoa1.nome= 'Mario'
+
+console.log(pessoa1.nome)
