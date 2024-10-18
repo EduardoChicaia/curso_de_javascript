@@ -19,7 +19,7 @@ class Pessoa
         this._idade  = idade
         this._altura = altura
         this._peso   = peso
-        this._imc    = (this._peso/(this._altura * this._altura)).toFixed(2)
+        this._imc    = (this._peso/(this._altura * this._altura).toFixed(2))
     }
 
 

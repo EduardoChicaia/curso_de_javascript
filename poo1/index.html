@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenner">
+        <div class="caixa">
+            <h1 class="titule">Calculadora de IMC</h1>
+            <form class="form">
+                <label for="nome">Nome: <input type="text" name="nome" id="nome" focus></label>
+                <label for="idade">Idade: <input type="number" name="idade" id="idade"></label>
+                <label for="peso">Peso: <input type="number" name="peso" id="peso"></label>
+                <label for="altura">Altura: <input type="number" name="altura" id="altura"></label>
+            </form>
+            <input class="subi" id="enviar" type="submit" value="Calcular">
+            <div>
+                <table class="tabela">
+                    <thead>
+                        <tr class="blue">
+                            <th>NOME</th>
+                            <th>IDADE</th>
+                            <th>PESO</th>
+                            <th>ALTURA</th>
+                            <th>IMC</th>
+                            <th>SITUAÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Eduardo</td>
+                            <td>34</td>
+                            <td>79</td>
+                            <td>1.97</td>
+                            <td>18.3</td>
+                            <td>Normal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
